@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="resume.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<title>React resume</title>
+	</head>
+	<body>
+        <div id="root"></div>
+        <script type="text/babel" >
+        const rootEl = document.getElementById("root")
+
+
+        const Banner_back = ()=> (<div className="resumetop"></div>)
+
+        const Banner_position =()=>(<div className='position'></div>)
+
+        const Banner_img =()=>( <img src="IMG_20200807_131834.jpg" className='photoposit img' width="200" height="160" ></img>)
+
+        const Banner_name=()=>(<div className='namebox'>Aditya Gujar</div>)
+
+        const Banner_add=()=>(<div className='center'>EFG house, IJK road, STV city, XYZ country.| xyz@gmail.com |89898989898</div>)
+
+        const ProIcon=()=>(<i className="fa fa-user-circle-o fa-3x position2" aria-hidden="true"> Profile   </i>)
+
+        const ProCont=()=>(<p className='position2'> 
+                    To achieve high career growth through a continuous process in learning for achieving goals &
+                    keeping myself dynamic in the changing scenario to become<br></br> a successful professional & leading 
+                    to best opportunity.
+                </p>)
+        
+        const SkillsIcon=()=>(<p><i className="fa fa-diamond fa-3x position2" aria-hidden="true"> Skills</i> <br></br></p>)
+    
+        const TechTag=()=>(<p className='position2'> <b> Technical Skills </b></p>)
+
+        const TechList=()=>(<p className='position2'><b>1. JAVASCRIPT <br></br>
+                            2. CSS <br></br>
+                            3. HTML <br></br>
+                            4. REACT <br></br> </b></p>)
+
+        const AddiTag=()=>(<p className='position2'> <b> Additional skills </b></p>)
+
+        const AddiList =()=>(<p className='position2'><b>1. Project Management <br></br>
+                            1. Business Development</b> </p>)
+        
+        const EduTag=()=>(<p><i className="fa fa-trophy fa-3x position2 " aria-hidden="true">Education</i></p>)
+
+        const EduName=()=>(<p className='position2'><b>Enggneering Mechanical program</b></p>)
+
+        const EduDetails=()=>( <ul className='position2'>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta beatae optio, corporis fugit accusantium debitis laborum tenetur,<br></br> quisquam distinctio nihil quam eum. Laudantium saepe, sunt, esse laboriosam dolores distinctio?</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta beatae optio, corporis fugit accusantium debitis laborum tenetur,<br></br> quisquam distinctio nihil quam eum. Laudantium saepe, sunt, esse laboriosam dolores distinctio?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error obcaecati vero animi porro praesentium quo explicabo dolore, voluptatum asperiores<br></br> recusandae nisi blanditiis reiciendis, nostrum cupiditate dolorem aliquid, fugit nesciunt mollitia?</li>
+                        </ul>)
+        
+        const Work1Tag =()=>(<p><i className="fa fa-flag fa-3x position2" aria-hidden="true"> Work Experienec</i></p>)
+
+        const Work1Role=()=>(<p className='position2'><b>Comunity Manger</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;03/12/2019-02/12/2020 <br></br>
+                            Housing, Los Angles</p>)
+        
+        const Work1Details=()=>(<ul className='position2'>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta beatae optio, corporis fugit accusantium debitis laborum tenetur,<br></br> quisquam distinctio nihil quam eum. Laudantium saepe, sunt, esse laboriosam dolores distinctio?</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta beatae optio, corporis fugit accusantium debitis laborum tenetur, <br></br>quisquam distinctio nihil quam eum. Laudantium saepe, sunt, esse laboriosam dolores distinctio?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error obcaecati vero animi porro praesentium quo explicabo dolore, voluptatum asperiores <br></br> recusandae nisi blanditiis reiciendis, nostrum cupiditate dolorem aliquid, fugit nesciunt mollitia?</li>
+                        </ul>)
+        
+
+        const Work2Role=()=>( <p className='position2'><b>Event Manager </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30/12/2019-20/12/2020 <br>
+                            </br>C3 HBO</p>)
+
+        const Work2Details=()=>(<ul className='position2'>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta beatae optio, corporis fugit accusantium debitis laborum tenetur, <br></br>quisquam distinctio nihil quam eum. Laudantium saepe, sunt, esse laboriosam dolores distinctio?</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta beatae optio, corporis fugit accusantium debitis laborum tenetur, <br></br>quisquam distinctio nihil quam eum. Laudantium saepe, sunt, esse laboriosam dolores distinctio?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error obcaecati vero animi porro praesentium quo explicabo dolore, voluptatum asperiores<br></br> recusandae nisi blanditiis reiciendis, nostrum cupiditate dolorem aliquid, fugit nesciunt mollitia?</li>
+                        </ul>)
+
+
+    
+        const Final_append = ()=> (
+            <div>
+                <Banner_back/>
+                <Banner_position/>
+                <Banner_img/>
+                <Banner_name/>
+                <Banner_add/>
+                <ProIcon/>
+                <ProCont/>
+                <SkillsIcon/>
+                <TechTag/>
+                <TechList/>
+                <AddiTag/>
+                <AddiList/>
+                <EduTag/>
+                <EduName/>
+                <EduDetails/>
+                <Work1Tag/>
+                <Work1Role/>
+                <Work1Details/>
+                <Work2Role/>
+                <Work2Details/>
+                
+                
+                
+                
+            </div>
+        )
+        ReactDOM.render(<Final_append/>,rootEl)
+
+
+        
+
+        // ReactDOM.render(myelement, document.getElementById('root'));
+
+
+
+       
+        
+        
+        </script>
+    </body>
+    
+    
+    
+</html>
